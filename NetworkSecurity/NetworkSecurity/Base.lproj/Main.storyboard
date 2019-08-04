@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvX-8O-ee8">
+                                <rect key="frame" x="166" y="438" width="82" height="30"/>
+                                <state key="normal" title="RSAEncrypt"/>
+                                <connections>
+                                    <action selector="sendRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Usi-Fw-zHh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-9R-76A">
+                                <rect key="frame" x="166.5" y="488" width="81" height="30"/>
+                                <state key="normal" title="AESEncrypt"/>
+                                <connections>
+                                    <action selector="aesEncrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqJ-c3-I0q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quY-fs-umv">
+                                <rect key="frame" x="166" y="538" width="82" height="30"/>
+                                <state key="normal" title="DESEncrypt"/>
+                                <connections>
+                                    <action selector="desEncrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zo-XT-m7O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fvX-8O-ee8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1P2-an-b1c"/>
+                            <constraint firstItem="quY-fs-umv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3dR-Zg-BtN"/>
+                            <constraint firstItem="ngd-9R-76A" firstAttribute="top" secondItem="fvX-8O-ee8" secondAttribute="bottom" constant="20" id="6ns-eE-PbT"/>
+                            <constraint firstItem="quY-fs-umv" firstAttribute="top" secondItem="ngd-9R-76A" secondAttribute="bottom" constant="20" id="TPp-4M-AoY"/>
+                            <constraint firstItem="fvX-8O-ee8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jbP-oq-9HC"/>
+                            <constraint firstItem="ngd-9R-76A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ncd-3D-aVq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
